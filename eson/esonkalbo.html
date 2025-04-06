@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>Cellphone Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+        }
+        .product {
+            background-color: white;
+            padding: 20px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .product h2 {
+            margin-top: 0;
+        }
+        .alert-button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .alert-button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Welcome to the Jayson Cellphone Shop</h1>
+    </div>
+  <marquee><font size="10">Buy Me!!!</marquee>
+
+    <div class="container">
+        <div class="product">
+            <h2>Realme Galaxy ML</h2>
+            <p>Price: ₱19,999</p>
+            <button class="alert-button" onclick="showAlert('Phone Model A')">Buy Now</button>
+        </div>
+        <div class="product">
+            <h2>Oppo 3210</h2>
+            <p>Price: ₱18,999</p>
+            <button class="alert-button" onclick="showAlert('Phone Model B')">Buy Now</button>
+        </div>
+        <div class="product">
+            <h2>Redme</h2>
+            <p>Price: ₱17,999</p>
+            <button class="alert-button" onclick="showAlert('Phone Model C')">Buy Now</button>
+        </div>
+    </div>
+
+    <script>
+        function showAlert(productName) {
+            alert('Thank you for your interest in ' + productName + '! Our sales team will contact you shortly.');
+        }
+    </script>
+
+</body>
+</html>
